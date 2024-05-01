@@ -1,0 +1,10 @@
+\section{Approach}
+We utilized Principal Components Analysis (PCA) to reduce the dimensionality of our image data, compressing it while retaining its essential features for subsequent machine learning (ML) analysis. Following dimensionality reduction, we applied ML classification techniques to the compressed data.
+
+Our first approach involved Support Vector Machines (SVM), which categorize images into four classes by creating boundary hyperplanes between them. SVMs are robust due to their ability to maintain an optimal margin gap between separating hyperplanes, enhancing prediction accuracy with test data. They are efficient, straightforward, and less prone to overfitting.
+
+Additionally, we employed the Random Forests (RF) algorithm, a technique that uses bagged decision trees and randomly selects subsets of features for each tree split. This method reduces variance and demonstrates robustness against outliers, potentially leading to a reliable galaxy classification model.
+
+Furthermore, we applied a Multi-Layer Perceptron (MLP) to our dataset. MLPs utilize multiple perceptrons—one for each input (e.g., pixel in an image)—to classify unknown patterns based on shared distinguishing features with known patterns. This allows MLPs to handle noisy or incomplete inputs effectively.
+
+Finally, we explored Convolutional Neural Networks (CNNs) for image classification, as they are known to outperform standard MLPs in this domain. CNNs excel in detecting spatial patterns due to their sliding-window convolutional operations, making them particularly well-suited for image data analysis.

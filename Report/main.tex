@@ -1,0 +1,88 @@
+\documentclass[10pt, twocolumn, letterpaper]{article}
+
+%%%%%%%%% PAPER TYPE  - PLEASE UPDATE FOR FINAL VERSION
+\usepackage{cvpr}
+\usepackage{cite}
+\usepackage{float}
+              % To produce the CAMERA-READY version
+% \usepackage[review]{cvpr}      % To produce the REVIEW version
+% \usepackage[pagenumbers]{cvpr} % To force page numbers, e.g. for an arXiv version
+
+% Import additional packages in the preamble file, before hyperref
+\input{preamble}
+
+% It is strongly recommended to use hyperref, especially for the review version.
+% hyperref with option pagebackref eases the reviewers' job.
+% Please disable hyperref *only* if you encounter grave issues, 
+% e.g. with the file validation for the camera-ready version.
+%
+% If you comment hyperref and then uncomment it, you should delete *.aux before re-running LaTeX.
+% (Or just hit 'q' on the first LaTeX run, let it finish, and you should be clear).
+\definecolor{cvprblue}{rgb}{0.21, 0.49, 0.74}
+\usepackage[pagebackref,breaklinks,colorlinks,citecolor=cvprblue]{hyperref}
+% \bibliographystyle{ieee}
+% \bibliography{references}
+
+
+%%%%%%%%% PAPER ID  - PLEASE UPDATE
+\def\paperID{*****} % *** Enter the Paper ID here
+\def\confName{CVPR}
+\def\confYear{2024}
+
+% It is strongly recommended to use hyperref, especially for the review version.
+% hyperref with option pagebackref eases the reviewers' job.
+% Please disable hyperref *only* if you encounter grave issues, 
+% e.g. with the file validation for the camera-ready version.
+%
+% If you comment hyperref and then uncomment it, you should delete *.aux before re-running LaTeX.
+% (Or just hit 'q' on the first LaTeX run, let it finish, and you should be clear).
+\definecolor{cvprblue}{rgb}{0.21, 0.49, 0.74}
+\usepackage[pagebackref,breaklinks,colorlinks,citecolor=cvprblue]{hyperref}
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage{amsmath}
+
+%%%%%%%%% PAPER ID  - PLEASE UPDATE
+\def\paperID{*****} % *** Enter the Paper ID here
+\def\confName{CVPR}
+\def\confYear{2024}
+
+%%%%%%%%% TITLE - PLEASE UPDATE
+\title{
+ML and DL Approaches to Galaxy Image Classification \\
+\large{\normalfont EP4130: Data Science Analysis} \\
+\normalfont Code: {\href{https://github.com/NamanChhibbar/EP4130-Project}{\textcolor {blue}{\normalfont https://github.com/NamanChhibbar/EP4130-Project}}}
+terima k}
+
+%%%%%%%% AUTHORS - PLEASE UPDATE
+\author{
+    Himanshu Jindal \\
+    {\tt\small ma21btech11007@iith.ac.in}
+    \and
+    Naman Chhibbar \\
+    {\tt\small ma21btech11011@iith.ac.in}
+}
+
+\begin{document}
+\maketitle
+\input{sec/abstract}   
+\input{sec/intro}
+\input{sec/approach}
+\input{sec/rationale}
+\input{sec/dataset}
+\input{sec/hypothesis}
+\input{sec/experimental_design}
+\input{sec/results}
+\input{sec/conclusion}
+\input{sec/references}
+{
+    \small
+    \nocite{*}
+    \bibliographystyle{ieeenat_fullname}
+    % \bibliography{main}
+}
+
+% WARNING: do not forget to delete the supplementary pages from your submission 
+% \input{sec/X_suppl}
+
+\end{document}

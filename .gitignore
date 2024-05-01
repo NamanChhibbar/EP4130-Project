@@ -1,0 +1,13 @@
+*/.DS_store
+
+__pycache__
+
+temp*
+
+*.out
+*.pdf
+*.log
+*.aux
+*.fls
+*.fdb_latexmk
+*.synctex.gz

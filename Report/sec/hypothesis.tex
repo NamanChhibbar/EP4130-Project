@@ -1,0 +1,13 @@
+\section{Hypothesis}
+
+\textbf{Hypothesis 0.1:} Even after implementing Z-score normalization, we expect the total variance in the dataset to approximate 1. In practice, there may be a slight difference between the expected and obtained variance.
+
+\textbf{Hypothesis 0.2:} While it is recommended, it is not necessary for ML algorithms to have perfectly balanced class representation in the dataset. We anticipate that learning techniques will achieve respectable classification accuracy even with slightly imbalanced datasets.
+
+\textbf{Hypothesis 1:} If approximately 95\% variance of the original dataset is preserved in the Principal Components obtained after PCA, we should be able to reconstruct the original images using these components.
+
+\textbf{Hypothesis 2:} For this specific use case, we hypothesize that Random Forest will outperform SVM due to the ensemble nature of Random Forests, which is beneficial for making robust predictions with relatively simple patterns.
+
+\textbf{Hypothesis 3:} The MLP model is expected to yield higher accuracies compared to our SVM and Random Forest models.
+
+\textbf{Hypothesis 4:} The CNN model is anticipated to achieve the highest accuracy among all machine learning models, including the MLP model.

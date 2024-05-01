@@ -1,0 +1,9 @@
+\section{Rationale}
+\label{sec:Rationale}
+We employed Principal Component Analysis (PCA) for feature selection to manage our large dataset efficiently by extracting the most relevant features and reducing dimensionality. This approach skips less significant components, aiding in computational resource optimization. We opted for PCA over $\mathbf{t}$-distributed stochastic neighbor embedding ($t$-SNE), which requires hyperparameter tuning and relies on probabilistic distribution, as PCA is more straightforward and reliable.
+
+Support Vector Machines (SVM) are suitable for high-dimensional data like images, providing clear data classification based on kernel equations. We considered logistic regression as an alternative, but it lacks the clear margins offered by SVM and focuses more on probabilistic boundaries.
+
+For our Random Forest approach, we utilized random feature selection at each node to determine splits. Random forests, unlike single decision trees, are robust due to their aggregation of multiple trees, reducing bias and enhancing accuracy.
+
+Multi-Layer Perceptrons (MLP) are adept at capturing complex patterns that may elude simpler ML techniques like Random Forests. MLPs do not consider spatial data, so we complemented this with Convolutional Neural Networks (CNN), which excel in processing high-dimensional image data by leveraging convolutional filters to reduce parameters while maintaining model quality. We applied Z-score normalization before directly feeding image data into the CNN, bypassing the need for PCA preprocessing.
